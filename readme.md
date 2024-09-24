@@ -1,69 +1,41 @@
+
 # Memory Game with Promo Code Reveal
+
+This in-app message features a memory game where users match pairs of cards. Upon successfully finding all matches, celebratory fireworks are triggered, and a promo code is displayed as a reward.
 
 ![Gif of memory game](memory.gif)
 
-This project is an interactive in-app memory game designed for the Braze customer engagement platform. Users can play a game of matching card pairs, and upon completing the game, a promo code is revealed.
 
-## Features
-
-- **Memory Game**: A 4x2 grid of cards where users can flip cards to find matching pairs.
-- **Promo Code Reveal**: Once all pairs are matched, a promo code is displayed.
-- **Fireworks Animation**: Celebratory fireworks animation upon winning the game.
-- **Responsive Design**: The game is designed to be visually appealing and functional on various screen sizes.
-
-## Technologies Used
-
-- **HTML**: Structure of the game.
-- **CSS**: Styling for the game interface.
-- **JavaScript**: Game logic and interactivity.
-- **Font Awesome**: Icons for a better user experience.
-- **Google Fonts**: Custom fonts for styling.
-- **Fireworks.js**: Library for fireworks animation.
-
-## Getting Started
+## Getting Started  
 
 To use this template in your Braze in-app messaging, follow these steps:
+  
 
-1. **Copy the Code**: Copy the entire HTML, CSS, and JavaScript code provided in this project.
-2. **Integrate with Braze**: Paste the code into the Braze in-app message editor.
-3. **Customize**: Modify the promo code and card images as needed to fit your campaign.
-4. **Test**: Ensure the game functions correctly within the Braze platform.
+1.  **Create In-App Message**: Create a new in-app message campaign and select the "Custom Code" message type.
 
-## Game Logic
+2.  **Copy Code**: Paste the code from `iam_memory_game.html` into the code editor.
 
-- The game consists of 8 cards (4 pairs).
-- Cards are shuffled and displayed face down.
-- Users click on cards to flip them over and try to find matching pairs.
-- If a match is found, the cards remain flipped; if not, they flip back after a short delay.
-- Once all pairs are matched, a promo code is displayed along with a fireworks animation.
+3.  **Upload Assets**: Upload the image assets `logo.png`, `img1.png` , `img2.png`, `img3.png`, and `img4.png` via the drag and drop upload for the campaign.
 
+5.  **Test**: Ensure the in-app message correctly renders across different devices.
+  
 ## Customization
 
-- **Card Images**: Replace the image filenames in the `cardsArray` with your own images.
-- **Promo Code**: Change the promo code in the HTML where it says `ELGYP29E` to your desired code.
-- **Styling**: Adjust the CSS styles to match your brand's design guidelines.
-
-## License
-
-This project is open-source and available for anyone to use and modify. Please give credit if you use this code in your own projects.
-
-## Acknowledgments
-
-- [Braze](https://www.braze.com/) for providing the platform for customer engagement.
-- [Font Awesome](https://fontawesome.com/) for the icons used in the game.
-- [Google Fonts](https://fonts.google.com/) for the custom fonts.
-- [Fireworks.js](https://github.com/crashmax/Fireworks) for the fireworks animation.
-
-## Contact
-
-For any questions or feedback, feel free to reach out to the project maintainer.
+Customize the in-app message to match a brand or style 
+ 
+-  **Card Images**: Upload an alternate image assets with the same naming schema as above to customize the images that are displayed.
+ 
+-  **Promo Code**: Replace the example promo code (`ELGYP29E` ) in `iam_memory_game.html` to your desired code or message. Be aware that the Braze out-of-the-box promotion code functionality [can't be used with in-app messages.](https://www.braze.com/docs/user_guide/personalization_and_dynamic_content/promotion_codes/#step-1-navigate-to-the-promotion-code-section:~:text=Promotion%20codes%20can%E2%80%99t%20be%20sent%20in%20in%2Dapp%20messages.) 
 
 
-## Dependencies/Libraries
+-  **Styling**: Adjust the CSS to match a given brand's design.
 
-- **HTML**: Structure of the game.
-- **CSS**: Styling for the game interface.
-- **JavaScript**: Game logic and interactivity.
-- **Font Awesome**: Icons for a better user experience.
-- **Google Fonts**: Custom fonts for styling.
-- **Fireworks.js**: Library for fireworks animation.
+## Dependencies
+
+[Google Fonts](https://fonts.google.com/) for the custom fonts.
+
+[Font Awesome](https://fontawesome.com/) for the icons used.
+
+[Fireworks.js](https://github.com/crashmax/Fireworks) for the fireworks animation.
+
+
