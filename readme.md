@@ -13,9 +13,9 @@ To use this template in your Braze in-app messaging, follow these steps:
 
 1.  **Create In-App Message**: Create a new in-app message campaign and select the "Custom Code" message type.
 
-2.  **Copy Code**: Paste the code from `iam_memory_game.html` into the code editor.
+2.  **Copy Code**: Paste the code from `memory_game_iam.html` into the code editor.
 
-3.  **Upload Assets**: Upload the image assets `logo.png`, `img1.png` , `img2.png`, `img3.png`, and `img4.png` via the drag and drop upload for the campaign.
+3.  **Upload Assets**: Upload the assets into the drag and drop media library (iamge assets: `)
 
 5.  **Test**: Ensure the in-app message correctly renders across different devices.
   
