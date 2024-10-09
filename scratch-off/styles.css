@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+#container {
+  position: relative;
+  width: 400px;  /* Set fixed width */
+  height: 400px; /* Set fixed height */
+}
+#scratchCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: inherit; /* Inherit the custom cursor from the container */
+  width: 100%; /* Make the canvas fill the container */
+  height: 100%; /* Make the canvas fill the container */
+}
+#backImage {
+  width: 100%;  /* Make the back image fill the container */
+  height: 100%;  /* Make the back image fill the container */
+  display: block;
+}
