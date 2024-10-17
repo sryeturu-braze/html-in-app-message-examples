@@ -1,26 +1,63 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
 }
+
 #container {
   position: relative;
-  width: 400px;  /* Set fixed width */
-  height: 400px; /* Set fixed height */
+  width: 90%;  /* Use a percentage for responsive width */
+  max-width: 400px; /* Set a maximum width */
+  height: auto; /* Allow height to adjust automatically */
+  aspect-ratio: 1; /* Maintain a 1:1 aspect ratio */
+  border: 7px solid #7aa0d6; /* Add a solid border with color */
+  border-radius: 10px; /* Add rounded corners */
+  overflow: hidden; /* Ensure that child elements do not overflow the container */
 }
+
 #scratchCanvas {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 3;
   cursor: inherit; /* Inherit the custom cursor from the container */
   width: 100%; /* Make the canvas fill the container */
   height: 100%; /* Make the canvas fill the container */
 }
+
 #backImage {
   width: 100%;  /* Make the back image fill the container */
   height: 100%;  /* Make the back image fill the container */
   display: block;
+  position: absolute; /* Position it absolutely */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  z-index: 1; /* Set a lower z-index */
+}
+
+#frontImage {
+  width: 100%;  /* Make the front image fill the container */
+  height: 100%;  /* Make the front image fill the container */
+  display: block;
+  position: absolute; /* Position it absolutely */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  z-index: 2; /* Set a higher z-index to place it above the back image */
+}
+
+#closeButton {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px; /* Space between the container and the button */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 16px; /* Font size */
+  background-color: #c95165; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none;
 }
