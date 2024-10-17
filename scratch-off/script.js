@@ -1,17 +1,12 @@
 let canvas;
 let ctx;
 
-let frontImage = document.getElementById('frontImage');
-let backImage = document.getElementById('backImage');
-
 let isDrawing = false;
 
 function setupCanvas() {
     canvas = document.getElementById('scratchCanvas');
     canvas.getContext('2d');
     ctx = canvas.getContext('2d');
-
-    console.log("setting up canvas");
 
     // Event listeners for mouse interactions
     canvas.addEventListener('mousedown', startDrawing);
@@ -31,7 +26,7 @@ function setupCanvas() {
     canvas.width = canvas.offsetWidth;
     canvas.height = canvas.offsetHeight;
 
-    // Load the front image onto the canvas
+    // draw the front image onto the canvas and remove the placeholder
     let frontImage = document.getElementById('frontImage');
     ctx.drawImage(frontImage, 0, 0, canvas.width, canvas.height);
     frontImage.remove();
@@ -62,22 +57,17 @@ function draw(event) {
     ctx.fill();
 }
 
-// wait for images to load before starting scratch off IAM
+
+// Wait for images to load before starting IAM
+
+const frontImage = document.getElementById('frontImage');
+const backImage = document.getElementById('backImage');
+
 Promise.all([
-    new Promise((resolve, reject) => {
-        if (frontImage.complete) {
-            resolve(); // Image is already loaded
-        } else {
-            frontImage.onload = resolve;
-        }
-    }),
-    new Promise((resolve, reject) => {
-        if (backImage.complete) {
-            resolve(); // Image is already loaded
-        } else {
-            backImage.onload = resolve;
-        }
-    })
+    frontImage.decode(),
+    backImage.decode()
 ]).then(() => {
     setupCanvas();
+}).catch((error) => {
+    console.error("Image decoding failed", error);
 });

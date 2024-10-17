@@ -13,8 +13,8 @@ body {
   width: 90%;  /* Use a percentage for responsive width */
   max-width: 400px; /* Set a maximum width */
   height: auto; /* Allow height to adjust automatically */
-  aspect-ratio: 1; /* Maintain a 1:1 aspect ratio */
-  border: 7px solid #7aa0d6; /* Add a solid border with color */
+  aspect-ratio: 9/16; /* Maintain a 1:1 aspect ratio */
+  border: 7px solid #801ED7; /* Add a solid border with color */
   border-radius: 10px; /* Add rounded corners */
   overflow: hidden; /* Ensure that child elements do not overflow the container */
 }
