@@ -28,6 +28,11 @@ function setupCanvas() {
 
     // draw the front image onto the canvas and remove the placeholder
     let frontImage = document.getElementById('frontImage');
+    frontImage.style.display = 'block';
+
+    let backImage = document.getElementById('backImage');
+    backImage.style.display = 'block';
+
     ctx.drawImage(frontImage, 0, 0, canvas.width, canvas.height);
     frontImage.remove();
 }
@@ -56,9 +61,6 @@ function draw(event) {
     ctx.arc(x, y, 27, 0, Math.PI * 2, true); // 27 is the radius of the circle
     ctx.fill();
 }
-
-
-// Wait for images to load before starting IAM
 
 const frontImage = document.getElementById('frontImage');
 const backImage = document.getElementById('backImage');

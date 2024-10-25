@@ -13,7 +13,20 @@
         <canvas id="scratchCanvas"></canvas>
     </div>
     <a id="closeButton" href="#" onclick="appboyBridge.closeMessage()">Close</a>
+    <!-- <script>
+        // Load the custom font
+        const fontName = 'CustomFont';
+        const fontUrl = 'url(custom-font.woff)';
 
+        const customFont = new FontFace(fontName, fontUrl);
+
+        customFont.load().then(function(loadedFont) {
+            document.fonts.add(loadedFont);
+            document.getElementById('closeButton').style.fontFamily = `'${fontName}'`;
+        }).catch(function(error) {
+            console.error('Font failed to load:', error);
+        });
+    </script> -->
     <script src="script.js"></script> <!-- Link to JavaScript file -->
 </body>
 </html>
