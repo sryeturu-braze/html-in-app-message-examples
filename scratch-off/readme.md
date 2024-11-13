@@ -1,5 +1,5 @@
 
-# Scratch-Off Reveal Game
+# Scratch-Off Reveal
 
 This in-app message features a scratch-off game where users can reveal a hidden image.
 
