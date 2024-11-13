@@ -30,7 +30,7 @@ function setupCanvas() {
     let frontImage = document.getElementById('frontImage');
     frontImage.style.display = 'block';
 
-    let backImage = document.getElementById('backImage');
+    let backImage = document.getElementById('revealImage');
     backImage.style.display = 'block';
 
     ctx.drawImage(frontImage, 0, 0, canvas.width, canvas.height);
@@ -58,12 +58,12 @@ function draw(event) {
     // Clear a circular area where the cursor is located
     ctx.globalCompositeOperation = 'destination-out'; // This mode allows us to erase
     ctx.beginPath();
-    ctx.arc(x, y, 27, 0, Math.PI * 2, true); // 27 is the radius of the circle
+    ctx.arc(x, y, 40, 0, Math.PI * 2, true); // 40px is the radius of the circle
     ctx.fill();
 }
 
 const frontImage = document.getElementById('frontImage');
-const backImage = document.getElementById('backImage');
+const backImage = document.getElementById('revealImage');
 
 Promise.all([
     frontImage.decode(),
