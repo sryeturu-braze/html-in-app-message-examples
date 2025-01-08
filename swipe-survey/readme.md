@@ -2,6 +2,8 @@
 
 This interactive in-app message allows users to swipe through cards to select their likes and dislikes. These choices are saved to the user's profile and can be used in subsequent messaging.
 
+![Gif of card swiping survey](sruvey.gif)
+
 ## Getting Started
 
 To use this template in your Braze in-app messaging, follow these steps:
