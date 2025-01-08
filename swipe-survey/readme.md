@@ -2,7 +2,7 @@
 
 This interactive in-app message allows users to swipe through cards to select their likes and dislikes. These choices are saved to the user's profile and can be used in subsequent messaging.
 
-![Gif of card swiping survey](sruvey.gif)
+![Gif of card swiping survey](survey.gif)
 
 ## Getting Started
 
